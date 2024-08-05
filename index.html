@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Матриці</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Операції з Матрицями</h1>
+    <form id="matrixForm">
+      <label for="arrayLength">Введіть довжину масиву:</label>
+      <input
+        type="number"
+        id="arrayLength"
+        name="arrayLength"
+        required
+      /><br /><br />
+      <label for="elementTopRight"
+        >Введіть кутовий елемент квадрата верх праворуч:</label
+      >
+      <input
+        type="number"
+        id="elementTopRight"
+        name="elementTopRight"
+        required
+      /><br /><br />
+      <label for="arrayRowSum">Введіть номер рядка для підрахунку суми:</label>
+      <input
+        type="number"
+        id="arrayRowSum"
+        name="arrayRowSum"
+        required
+      /><br /><br />
+      <label for="arrayColumnSum"
+        >Введіть номер стовпця для підрахунку суми:</label
+      >
+      <input
+        type="number"
+        id="arrayColumnSum"
+        name="arrayColumnSum"
+        required
+      /><br /><br />
+      <button type="button" onclick="generateMatrix()">
+        Сгенерувати матрицю
+      </button>
+    </form>
+    <div id="matrixOutput"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
